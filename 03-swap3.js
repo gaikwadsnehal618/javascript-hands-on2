@@ -1,0 +1,16 @@
+console.log("=========Swapping Assignment=========");
+console.log("===========Task 1===========");
+var sweety="Sweety";
+var cutie="Cutie";
+console.log("Before swap: Sweety is: " +sweety + " and cutie is:" + cutie);
+console.log("After swap: Cutie is: " +cutie + " and cutie is:" + sweety);
+console.log("===========Task 2=============");
+var num1=100;
+var num2=200;
+var num3=300;
+console.log("Before Swap: num1: " +num1 +"and num2:" +num2 +"and num3:" +num3);
+var tempNum=num1;
+num1=num2;
+num2=num3;
+num3=tempNum;
+console.log("After Swap: num1: " +num1 +"and num2:" +num2 +"and num3:" +num3);

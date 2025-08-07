@@ -11,7 +11,6 @@ function femaleMarriageEligiblity(gender,age,girlName){
     var result=(gender === "Female" &&age >=18)
     ?console.log(`Hey ${girlName} you are eligible for marriage`)
     :console.log(`Hey ${girlName} you are not eligible for marriage`);
-
 }
 femaleMarriageEligiblity("female",16,"Jenifier");
 femaleMarriageEligiblity("female",27,"Malinda Gates");

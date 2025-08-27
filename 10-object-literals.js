@@ -26,6 +26,39 @@ for (const elements of person.Companies){
 }
 console.log("=====Create an empty object=========");
 
+    console.log("=========Traverse the object===============");
+    console.log("=========Object freezing===========");
+    console.log("==============object assign==========");
+    console.log("==============cloning=============");
+    const personStew={
+        fullName:stew ,
+        age:25,
+        isMarried:false
+    }
+const cloneObject=Object.assign({},personStew)
+console.log(cloneObject);
+console.log("======merge the object=========");
+const address={
+    city:"pune",
+    country:"india",
+    pin:"411107"
+}
+Object.assign(personStew ,address)
+console.log(personStew);
+
+
+
+
+
+
+
+    
+
+    
+    
+
+    
+    
     
 
 

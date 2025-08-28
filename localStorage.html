@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Local Storage Assignment</title>
+</head>
+<body>
+  <h1>Local Storage Assignment</h1>
+  <div id="output"></div>
+
+  <script>
+    localStorage.setItem("name", "Snehal Gaikwad");
+    localStorage.setItem("city", "Pune");
+    localStorage.setItem("pinCode", "411001");
+    localStorage.setItem("district", "Pune District");
+    localStorage.removeItem("city");
+
+    
+    function getValue(key) {
+      let value = localStorage.getItem(key);
+      return value === null ? "Removed" : value;
+    }
+
+    // Step 5: Output banake page pe show karo
+    document.getElementById("output").innerHTML = `
+      <table border="1" cellpadding="8" cellspacing="0">
+        <tr><th>Key</th><th>Value</th></tr>
+        <tr><td>Name</td><td>${getValue("name")}</td></tr>
+        <tr><td>City</td><td>${getValue("city")}</td></tr>
+        <tr><td>Pin Code</td><td>${getValue("pinCode")}</td></tr>
+        <tr><td>District</td><td>${getValue("district")}</td></tr>
+      </table>
+    `;
+
+    // Step 6: Console me bhi print karo
+    console.log("Name:", localStorage.getItem("name"));
+    console.log("City:", localStorage.getItem("city"));
+    console.log("Pin Code:", localStorage.getItem("pinCode"));
+    console.log("District:", localStorage.getItem("district"));
+    console.log(window.localStorage);
+    
+  </script>
+</body>
+</html>
